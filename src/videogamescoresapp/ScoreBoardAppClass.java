@@ -185,6 +185,31 @@ public class ScoreBoardAppClass {
         int min;
         int max;
         double avg;
+        
+        public Stats(int min, int max, double avg){
+            this.min = min;
+            this.max = max;
+            this.avg = avg;
+        }
+    }
+    
+    public Stats computeStatsForGame(int gameIndex){
+        int[] scoreForGigenGame = new int[this.studentCount];
+        for(int i =0; i < this.studentCount; i++){
+            StudentClass s = this.students[i];
+            int[] allHisScores = s.getScores();
+            int score = allHisScores[gameIndex];
+            System.out.print(score + ", ");
+        }
+        
+        //int min = Utilities.findLowest(scoreForGigenGame);
+        //int max = Utilities.findHighest(scoreForGigenGame);
+        //double avg = Utilities.findAverage(scoreForGigenGame);
+        
+        Stats statsObj = new Stats(0, 0, 0);
+        
+        
+        return statsObj;
     }
 
 }

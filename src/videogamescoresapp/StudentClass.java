@@ -51,6 +51,10 @@ public class StudentClass {
        return score;
     }
     
+    public int[] getScores(){
+        return scores;
+    }
+    
     public void setId(String id)
     {
         this.id = id;

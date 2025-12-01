@@ -116,7 +116,7 @@ public class VideoGameScoresApp {
     {
          System.out.println("Handling Updating Student Score");
          Scanner input = new Scanner(System.in);
-         app.updateScore(input.nextLine(), 0, 0);
+         app.updateScore(input.nextLine(), input.nextInt(), input.nextInt());
     }
     public static void handleGameStats()
     {
